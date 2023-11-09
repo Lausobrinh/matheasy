@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perguntas de Matemática</title>
+</head>
+<body>
+    <h1>Perguntas de Matemática</h1>
+    
+    <div id="pergunta">
+        <!-- A pergunta será gerada dinamicamente aqui -->
+    </div>
+
+    <form>
+        Sua resposta: <input type="text" id="resposta">
+        <input type="button" value="Verificar" onclick="verificarResposta()">
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        var perguntas = [
+            { pergunta: "2 + 2 =", resposta: "4" },
+            { pergunta: "3 x 5 =", resposta: "15" },
+            { pergunta: "10 - 7 =", resposta: "3" }
+        ];
+
+        var perguntaAtual = 0;
+
+        function mostrarPergunta() {
+            document.getElementById("pergunta").innerHTML = perguntas[perguntaAtual].pergunta;
+        }
+
+        function verificarResposta() {
+            var resposta = document.getElementById("resposta").value;
+            if (resposta === perguntas[perguntaAtual].resposta) {
+                document.getElementById("resultado").innerHTML = "Resposta correta!";
+            } else {
+                document.getElementById("resultado").innerHTML = "Resposta incorreta. Tente novamente.";
+            }
+
+            // Avan
