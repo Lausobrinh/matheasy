@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Inicial - Quiz de Matemática</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Quiz de Matemática</h1>
+        <p>Teste seus conhecimentos em matemática respondendo a algumas perguntas.</p>
+    </header>
+    
+    <section class="start-quiz">
+        <h2>Clique no botão para começar o quiz!</h2>
+        <a href="quiz.html" class="start-button">Iniciar o Quiz</a>
+    </section>
+</body>
+</html>
